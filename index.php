@@ -4,7 +4,7 @@
 ?> 
         <div class="container">
             <div class="jumbotron">
-                <h2>Ottermart Admin Login</h2>
+                <h2>Simple Clipboard Manager Login</h2>
             </div>
             <form method="POST" action="loginProcess.php">
                 <div class="form-group">
@@ -24,7 +24,8 @@
                 </div>
                 <div class="btn-group">
                     <div class="col-md-4">        
-                        <input type="submit" name="submitForm" value="Login!" class="btn btn-default"/>
+                        <input type="submit" name="submitForm" value="login" class="btn btn-default"/>
+                        <input type="submit" name="registerForm" value="register" class="btn btn-default" />
                     </div>
                 </div>
                 <br /><br />
