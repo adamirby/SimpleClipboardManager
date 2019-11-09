@@ -2,13 +2,35 @@
 	session_start();
 	include 'inc/header.php';
 ?> 
-		<div>
-			<h3>Simple Clipboard Manager</h3>
-			<hr />
-			<p> Testing Git -> Heroku deployment pipeline
-				mysql://b37844811b0d7c:909be975@us-cdbr-iron-east-05.cleardb.net/heroku_5da89da6925d74d?reconnect=true
-			</p>
-		</div>
+            <form method="POST" action="loginProcess.php">
+                <div class="form-group">
+                    <span class="adminPrompt">Username:</span>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input type="text" name="username" class="form-control"/> <br />
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <span class="adminPrompt">Password: </span>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input type="password" name="password" class="form-control"/> <br />
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <div class="col-md-4">        
+                        <input type="submit" name="submitForm" value="Login!" class="btn btn-default"/>
+                    </div>
+                </div>
+                <br /><br />
+                <?php
+                    if($_SESSION['incorrect']){
+                        echo "<p class='lead' id='error' style='color:red'>";
+                        echo "<strong>Incorrect Username or Password!</string></p>";
+                    }
+                ?>
+            </form>
 
 <?php
 	include 'inc/footer.php';
