@@ -24,8 +24,9 @@
                 </div>
                 <div class="btn-group">
                     <div class="col-md-4">        
-                        <input type="submit" name="submitForm" value="login" class="btn btn-default"/>
-                        <input type="submit" name="registerForm" value="register" class="btn btn-default" />
+                        <input type="submit" name="submitForm" value="Login" class="btn btn-default"/>
+                        <br />
+                        <input type="submit" name="registerForm" value="Register" class="btn btn-default" />
                     </div>
                 </div>
                 <br /><br />
