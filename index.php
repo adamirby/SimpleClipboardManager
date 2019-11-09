@@ -26,7 +26,8 @@
                     <div class="col-md-4">        
                         <input type="submit" name="submitForm" value="Login" class="btn btn-default"/>
                     </div>
-                    <br />
+                </div>
+                <div class="btn-group">
                     <div class="col-md-4">
                     	<input type="submit" name="registerForm" value="Register" class="btn btn-default" /> 
                     </div>
