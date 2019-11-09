@@ -2,6 +2,10 @@
 	session_start();
 	include 'inc/header.php';
 ?> 
+        <div class="container">
+            <div class="jumbotron">
+                <h2>Ottermart Admin Login</h2>
+            </div>
             <form method="POST" action="loginProcess.php">
                 <div class="form-group">
                     <span class="adminPrompt">Username:</span>
@@ -31,6 +35,7 @@
                     }
                 ?>
             </form>
+        </div>
 
 <?php
 	include 'inc/footer.php';
